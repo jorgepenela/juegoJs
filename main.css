@@ -1,0 +1,116 @@
+*{
+	font-family: monospace;
+	transition:  all 1s;
+}
+body{
+	background: #000;
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+}
+button{
+	color: #000;
+}
+#juego{
+	position: relative;
+	width: 700px;
+	background: #000;
+	padding: 50px;
+	padding-bottom: 0px;
+	background-image: url(img/back.jpg);
+	background-size: cover;
+	background-position: bottom center;
+	background-size: 160%;
+}
+input[type=radio]{
+	
+	display: inline-block; 
+	height: 40px;
+	width: 100%;
+}
+h1{
+	font-weight: bold;
+}
+.hidden{
+	display: none;
+}
+#pj1{
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	background-image: url('https://i.pinimg.com/originals/2b/39/99/2b399961952472bfdcd050e4482f2155.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.vida{
+	font-weight: bold;
+	font-size: 20px;
+}
+.pelea{
+	font-size: 100px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.beatBar{
+	width: 100%;
+	height: 5px;
+	background: orange;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.beatfull{
+	width: 100%;
+	background: yellow;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 5px;
+	transition: all 0.5s;
+
+}
+@keyframes contar {
+  from {width: 100%;}
+  to {width: 0%;}
+}
+.contar{
+	animation-name: contar;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.def{
+	background-image: url('https://i225.photobucket.com/albums/dd155/GM123456/MK1_HD_Scorpion_StandBlock_04.gif') !important;
+}
+.lose{
+	background-image: url('https://i1.wp.com/www.sopitas.com/wp-content/uploads/2016/04/scorpion.gif') !important;
+}
+.win{
+	background-image: url('https://2.bp.blogspot.com/--fzvdSxz5Fc/VQjud1kh_rI/AAAAAAAANpw/1PaN7MGnBv8/s1600/Sub-Zero%2B4.gif') !important;
+}
+.esp{
+	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80b7bd54-9d84-412c-b384-311e6499ea4f/da8n4ef-fff346d0-1e72-4aa9-9515-6254a7b96bd7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvODBiN2JkNTQtOWQ4NC00MTJjLWIzODQtMzExZTY0OTllYTRmXC9kYThuNGVmLWZmZjM0NmQwLTFlNzItNGFhOS05NTE1LTYyNTRhN2I5NmJkNy5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.U-lX0eCFRPz5L3TdXX-Q8eK8ntwBhh2yLr-3pPiyRrU') !important;	
+}
+.punch{
+	background-image: url('https://i.pinimg.com/originals/50/81/23/508123bf549c34badf67d2ba00864b32.gif') !important;
+}
+.normal{
+	background-image: url('https://i.pinimg.com/originals/2b/39/99/2b399961952472bfdcd050e4482f2155.gif') !important;
+}
+
+.lifebar{
+	background: blue;
+	max-width: 200px;
+	height: 20px;
+	width: 100%;
+	position: relative;
+}
+.lifebar div{
+	position: absolute;	
+	width: 100%;
+	background: red;	
+	height: 20px;
+	max-width: 200px;
+}

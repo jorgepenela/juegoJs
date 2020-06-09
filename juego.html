@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JUEGO1</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="main.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<main>
+			<div class="container-fluid" id="juego">
+				<div class="beatBar">
+					<div class="beatfull"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div>P1 Nombre</div>
+						<!-- <div class="vida"><span class="saludp1"></span></div> -->
+						<div class="lifebar"><div></div></div>
+						<div class="pj">
+						
+						<div id="pj1">
+							<!-- <img src="https://i.pinimg.com/originals/2b/39/99/2b399961952472bfdcd050e4482f2155.gif" alt="" style="height: 200px; "> -->
+						</div>
+
+						</div>
+						<form name="fp1">
+						<ul class="list-inline">
+							<li>
+								<label for="0">Ataque
+									<input type="radio" name="p1" value="0">
+								</label>
+							</li>
+							<li>
+								<label for="1">Defensa
+									<input type="radio" name="p1" value="1">
+								</label>
+							</li>
+							<li>
+								<label for="2">Especial
+									<input type="radio" name="p1" value="2">
+								</label>
+							</li>
+						</ul>
+						</form>
+						<br>
+						
+						<br>
+						
+
+					</div>
+					<div class="col-sm-6 text-right">
+						<div>P2 Nombre</div>
+						<div class="vida">VIDA <span class="saludp2"></span></div>
+						<div class="pj">
+						
+						<div id="pj2">
+							<img src="https://i.pinimg.com/originals/2b/39/99/2b399961952472bfdcd050e4482f2155.gif" alt="" style="height: 200px;transform: rotateY(180deg);">
+						</div>
+						</div>
+
+						<ul class="list-inline">
+							<li>
+								<label for="0">Ataque
+									<input type="radio" name="p2" value="0" checked>
+								</label>
+							</li>
+							<li>
+								<label for="1">Defensa
+									<input type="radio" name="p2" value="1">
+								</label>
+							</li>
+							<li>
+								<label for="2">Especial
+									<input type="radio" name="p2" value="2">
+								</label>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+		</main>
+		<div class="mensa text-center">
+		<h1 id="mensajes"></h1>
+		<h2></h2>
+		<button onclick="reiniciar();">OTRA VEZ!</button>
+		</div>
+
+		<div id="home" style="text-align: center;">
+			<button onclick="iniciar();" class="pelea">PELEA!</button>
+			<p>Instrucciones</p>
+		</div>
+
+		<!-- scripts -->
+		<script src="main.js"></script>
+	</body>
+</html>
